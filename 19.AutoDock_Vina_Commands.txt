@@ -1,0 +1,11 @@
+Command line for running AutoDock Vina for molecular docking (binding of small molecules to proteins):
+
+vina.exe --config configdata.txt --log data.txt --out "Drug and protein molecule docking.pdbqt"
+
+Parameter descriptions:
+- vina.exe: The main AutoDock Vina executable program.
+- --config configdata.txt: Specifies the configuration file, which contains parameters such as the receptor file, ligand file, grid center, and grid box size.
+- --log data.txt: Specifies the log file to write the detailed run information (e.g., energy values, scoring) to data.txt.
+- --out "Drug and protein molecule docking.pdbqt": Specifies the output file to save the resulting complex structures (in pdbqt format).
+
+Upon successful execution, "Drug and protein molecule docking.pdbqt" will be generated in the working directory, containing the docking results (multiple conformations).
